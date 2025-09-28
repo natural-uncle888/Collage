@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
+  <meta name="theme-color" content="#0f172a">
+<meta charset="utf-8">
   <title>自然大叔｜作品清單</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <!-- 新增 favicon -->
-  <link rel="icon" href="https://res.cloudinary.com/dijzndzw2/image/upload/v1757176751/logo-3_hddq08.png" type="image/png"/>
   <style id="cols-override">
   /* 固定 3 欄，上下各 3 ；小尺寸降為 2/1 欄 */
   #list.grid { display:grid; grid-template-columns: repeat(3, 1fr) !important; gap: var(--gap, 12px); }
@@ -21,12 +22,14 @@
   /* 限制頁首 LOGO 尺寸 */
   header .logo img { height: 40px !important; width: auto !important; max-height: 40px !important; object-fit: contain !important; }
 </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   <header>
-    <div class="container nav">
+    <meta name="theme-color" content="#0f172a">
+<div class="container nav">
       <div class="logo" href="./">
-        <img src="logo.png">
+        <img src="logo.png" alt="logo">
       </div>
       <form id="filters" class="searchbar" onsubmit="event.preventDefault(); load()">
         <input id="q" type="search" placeholder="搜尋標題或標籤…" />
